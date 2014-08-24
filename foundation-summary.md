@@ -237,10 +237,53 @@ background
 - team plans are optional, created by TM
 - Executive approves project plan
 
+### Risk ###
+- risk = set of events which will have an effect on achieving the project objectives / improve the ability of project to succeed
+- all projects introduce something new and uncertainty is risk
+- risk may be either **threat** or **opportunity**
+- risk management is one of the main tasks of the PM
+- three steps to Risk Management: identification (describe), assess (likelihood, impact) and control (respond)
+- risk appetite: how much risk is a company willing to accept
+- risk tolerance: acceptable/unacceptable deviations from what is expected
 
+#### Risk Management Strategy ####
+- document that defines project procedures for Risk Management
+- how risks will be identified, assessed, controlled and communicated (techniques and standards to be applied)
+- also provides guidelines for risk communication
+- template may already exist in the company/programme
+- created in the IS by the PM
 
+#### Risk Register ####
+- captures and maintains information on all risks (threats/opportunities)
+- record of risks with their history
+- can be a spreadsheet with those columns: identifier, author, date, category (e.g. quality, network, legal, supplier), description (cause/event/effect), probability impact (high/medium/low), proximity (when, e.g. long term or early), risk response category, response, status, owner (reporter), actionee (reponsible for action)
 
+#### Risk Management procedure ####
+five steps:
 
+1. Identify (complete RMS document first, identify context, use checklists and lessons learned from other projects and brainstorm with specialists)
+2. Assess (probability and impact)
+3. Plan (steps for response)
+4. Implement (carry out responses from step 3)
+5. Communicate (stakeholders, use existing reports)
+
+or **I** **A**te **P**eaches **I**n **C**hina.
+
+- risks are expressed in cause (Volcano eruprion in Iceland)/event (wind brings ash into UK airspace)/effect (80% flights delayed/cancelled)
+- or: due to X, there is a risk of Y that could result in Z
+- estimating is about assessing the probability, impact and proximity for each risk (e.g. via Expected Value or Pareto)
+- evaluating is to group all risks and get a risk value for entire project
+- each thread/opportunity must be understood regarding probability, impact, proximity and how impact may change over time of project
+- planning responses to risk is to reduce threats and maximize opportunities
+- exising reports are used for communication, e.g. Checkpoint/Highlight/End Stage/ End Project/Lessons reports
+
+##### Responses to threads/opportunities #####
+- threats: avoid, reduce (probability or impact), fallback (contingency/plan of actions), transfer (to another party, e.g. insurance), share (common in customer/supplier), accept
+- opportunities: exploit (use it), enhance (improve likelihood), share, reject
+
+#### Risk budget ####
+- money that is put aside to deal with threats/opportunities
+- cannot be used for anything else
 
 
 Sources: [Flashcards](http://quizlet.com/9018193/prince2-foundation-flash-cards/)
