@@ -285,6 +285,112 @@ or **I** **A**te **P**eaches **I**n **C**hina.
 - money that is put aside to deal with threats/opportunities
 - cannot be used for anything else
 
+### Change ###
+- purpose: identify, assess and control any potential changes in products rhat have been approved/baselined
+- handle change requests and issues that arise during the project (**issue and change control**)
+- don't prevent changes, but get them agreed and approved before executing them
+- issues should be prioritized following **M**o**SC**o**W**
+
+#### Types of issues ####
+1. Request for change: on a baselined product
+2. Off-specification: agreed to be done but not offered by supplier
+3. Problem/concern which would also be a question: anything that the PM needs to resolve or escalate, can be positive/negative
+
+#### Management products ####
+1. Configuration Management strategy: document describing how issues and changes will be handled (e.g. identify/control products, tools, data to keep, responsibilities, scale)
+2. Configuration Items Records: provide a set of data for each product (metadata, list of attributes), identifiy user access, relationships and status
+2. Product Status Account: report on status of products (e.g. on Stage level)
+3. Daily Log: diary/notes for all informal information
+4. Issue Register: spreadsheet to capture and maintain issues (formal)
+5. Issue Reports: describes issue(s) in detail, lists related issues
+
+#### Change budget ####
+- sum of money that customer/supplier agree to use to fund requests for change
+- Change Authority (assigned by PB) manages this budget
+- PM can always refer to the change process (e.g. via form) for all change requests, never has to say "no"
+
+#### Configuration Management activities ####
+Maintain and control changes for each product, two activities at project start:
+
+1. Planning: To what level will Change Management be done? Which documents/information do we need?
+2. Identification: how to identify each product uniquely (e.g. project-product-owner-version-date)
+
+three activities during project:
+
+1. Control: Nothing moves and nothing changes without authorization (baselining, archiving, distribution copies, ...)
+2. Status Accounting: reporting current/historical data for each product in product Status Account format
+3. Verification & Audit: Are products in line with Configuration Items Records?
+
+#### Issue and Change Control Procedure ####
+- Capture: determine issue type and if formal/informal
+- Examine: assess impact on project objectives
+- Propose: actions to take (identifiy options, evaluate, recommend)
+- Decide: someone approves/rejects the recommended solution
+- Implement: take corrective action
+
+or **CEPDI**.
+
+- data can be stored in Daily Log, Issue Register and Issue Report
+- issues are always escalated to level above (PM > PB)
+
+### Progress ###
+- a good PM needs to track progress (with help of a system), so **monitor and compare achievements** against the plannings
+- provide a forecast and be able to control any unacceptable deviations
+- Exception: there will be a deviation beyond the agreed tolerance levels
+- PM may set tolerance levels and manage minor deviations himself, only alerting PB for bigger issues
+- there are **Work Package**, **Stage-** and **Project** tolerances
+
+#### Progress approach ####
+1. delegate authority from one level to the next
+2. divide project into management stages, authorize only one stage at a time
+3. time-driven and event-driven progress reports (e.g. Highlight Reports)
+4. raising exceptions: alert above layer if big issue occurs
+
+Delegating authority:
+
+**Corporate/Programme management** >>> Project tolerances >>> **PB** >>> Stage tolerances >>> **PM** >>> Work Package tolerances >>> **TM**
+
+**TM** >>> Work package progress/issues >>> **PM** >>> Stage progress/exceptions >>> **PB** >>> Project progress/exceptions >>> **Corporate/Programme management**
+
+#### PB Controls ####
+1. Authorizations: e.g. authorize next stage
+2. Progress updates: get regular reports from PM
+3. Exceptions & Changes: receive Exception and Issue Reports 
+
+#### PM Controls ####
+1. Authorizations: authorizes Work packages
+2. Progress updates: receive Checkpoint Reports from TM or team members
+3. Exceptions & Changes: review progress via registers and logs, changes will be handled via Change Control
+
+#### Management Stages ####
+- decision points for PB between stages
+- never overlap
+- chance to check viability, review, authorize
+- at minimum are two stages in project (IS, delivery stage)
+- number of stages depends on duration, key decision points, risk, amount of control by PB, confidence
+- stages should be short when there is a lot of risk/complexity
+
+#### Technical Stages ####
+- how companies/teams work, usually linked to skills (e.g. requirements, development, testing)
+- may overlap each other and span a Management Stage Boundary
+
+#### Event- and Time-driven Controls ####
+- event-driven controls take place when something happens (events)
+- time-driven controls take place at pre-defined intervals (e.g. send Highlight Report every two weeks)
+
+#### Reports to report Progress ####
+- Checkpoint Reports: TM reports to PM, progress compared to agreed team plan
+- Highlight Report: PM reports status of stage compared to Stage Plan (not much detail, 1-2 pages)
+- End Stage Report: PM creates at end of stage, PB decides whether to authorize, modify scope or stop the project
+- End Project Report:  PM creates during Closing process, PB authorizes closure
+
+Relevant documents for PM:
+
+- PM checks progress via Checkpoint Reports (from TM) and Quality Register (maybe also Lessons Log from previous projects)
+- PM keeps track of prograss via Daily Log, Issue Register, Product Status Account, Quality Register and Risk Register
+
+
+
 
 Sources: [Flashcards](http://quizlet.com/9018193/prince2-foundation-flash-cards/)
 
