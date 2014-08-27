@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>foundation-summary</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>PRINCE2 Foundation summary</h1>
+<p>The essential knowledge for the PRINCE2 foundation exam. All bullet points are very brief, for details you better refer to the excellent <a href="http://www.mgmtplaza.com/elearn/dirBooks/P2FPM42.pdf">PRINCE2 foundation training manual by Management Plaza</a>.</p>
+<h2>Core aspects</h2>
+<h3>Projects in general</h3>
+<ul>
+<li>projects introduce change, are unique and bring a certain amount of uncertainty</li>
+<li>defined start and end (temporary), cross-functional (involves people from different departments)</li>
+<li>PRINCE2 definition: <strong>project</strong> is a temporary organization created for the purpose of delivering one or more business products according to an agreed Business Case </li>
+<li><strong>program</strong>: set of related projects</li>
+</ul>
+<h3>PRINCE2 core principles</h3>
+<p>framework for good project practice for those involved in a project:</p>
+<ol>
+<li>continued business justification (throughout the project lifetime)</li>
+<li>learn from experience</li>
+<li>defined roles and responsibilities (who does what, what to expect from others, various stakeholders: business sponsors, users, suppliers)</li>
+<li>manage by stages (separated by decision points, manageable chunks)</li>
+<li>manage by exception (when things go outside the agreed tolerances)</li>
+<li>focus on products (everyone has the same idea of the product)</li>
+<li>tailor to suit the project environment (different paperwork depending on size, environment, complexity, ...)</li>
+</ol>
+<h3>PRINCE2 structure / core elements</h3>
+<ul>
+<li>principles</li>
+<li>themes (what items must be addressed, e.g. Business Case, Organization, Quality, Change)</li>
+<li>processes (what activities and by whom)</li>
+<li>tailoring</li>
+</ul>
+<h3>six variables / tolerances / performance targets / goals</h3>
+<ul>
+<li>timescales (the &quot;when&quot;)</li>
+<li>costs (budget)</li>
+<li>quality (usable product)</li>
+<li>scope (defined scope, stakeholders involved, what is mandatory and what is not)</li>
+<li>benefits (the &quot;why&quot;, ROI, measurable)</li>
+<li>risk (what risks, how many, how to manage) </li>
+</ul>
+<p>...or in short <strong>BCQRST</strong>. These variables need to be continuously monitored.</p>
+<h3>PRINCE2 themes</h3>
+<p>Themes are knowledge areas of the project. They are a core activity and need to be defined whenever a project is started. These are the themes and their mapping to the principles:</p>
+<ul>
+<li><strong>Business Case</strong> (business justification, reason for project)</li>
+<li><strong>progress</strong> (manage by stages/exception, business justification, highlight and stage reports for project board, compare actual achievements to the planned ones, give forecast, control deviations)</li>
+<li><strong>organization</strong> (roles/responsibilities, who represents sponsor, users, suppliers)</li>
+<li><strong>plans</strong> (focus on products, includes product descriptions and project plan, needs project steps, cost and quality)</li>
+<li><strong>quality</strong> (products need to match users expectations, quality level, continuous check)</li>
+<li><strong>risk</strong> (evaluate and manage risks, distinction between threats and opportunities)</li>
+<li><strong>change</strong> (issues and their impact, how to assess, act on and manage issues, also covers Configuration Management)</li>
+<li><strong>lessons learned</strong> (learn from experience)</li>
+<li><strong>tailoring</strong></li>
+</ul>
+<p>Organization also provides information on Project management team and its structure and accountability. This team...</p>
+<ul>
+<li>represents business, users and suppliers</li>
+<li>has defined responsibilities for directing, managing and delivering the project</li>
+<li>have a strategy to manage communication between stakeholders</li>
+</ul>
+<p>PRINCE2 plan is a document describing how, when and by whom a target can be achieved. See targets above. Project plan gets updated in every stage and is compared to the baselined Project plan. There are different plans:</p>
+<ul>
+<li>project plan (high level, mainly for Project Board)</li>
+<li>stage plan (day-to-day-work of the PM, focused on products)</li>
+<li>team plan (for team manager)</li>
+</ul>
+<h3>common project failures</h3>
+<ul>
+<li>insufficient product definitions (lead to wrong product)</li>
+<li>lack of communication</li>
+<li>poor estimation of time and cost</li>
+</ul>
+<h3>PRINCE2 benefits</h3>
+<ul>
+<li>established for long tine in the industry</li>
+<li>applicable to any project</li>
+<li>gives a structure for roles and responsibilities</li>
+<li>always focused on the product</li>
+<li>viability of project is constantly checked</li>
+</ul>
+<h2>Themes in detail</h2>
+<h3>Business Case</h3>
+<ul>
+<li>one of the first things of a PM: ask for the Business &lt;case (although many projects don't have one)</li>
+<li>PRINCE2 is based on customer/supplier environment: customer specifies the result and pays, supplier provides resources and delivers the results</li>
+<li>customer/supplier can be inside the same company</li>
+<li>Business Case theme provides structure to judge whether Business Case is desirable, viable, achievable and worth the continued investment</li>
+<li>continuously maintained throughout the project (because changes in requirements can also lead to changes in the Business Case, e.g. if additional staff is needed)</li>
+<li>needs to be verified by Project Board before project starts</li>
+<li>Executive is resposible for the Business Case and for securing funding</li>
+</ul>
+<p>So what do you get?</p>
+<ul>
+<li>output: what product will be delivered (for users)</li>
+<li>PRINCE2 distinguishes between specialist (given to users) and management products (documents for communication)</li>
+<li>outcome: what can users do better with that product (result of change)</li>
+<li>benefits: measurable improvements by using this product (advantages, usually by at least one of the stakeholders)</li>
+</ul>
+<h4>Benefits review plan</h4>
+<ul>
+<li>identifiy benefits and how they can be measured, must include a timeline (if you can't measure it, don't claim it)</li>
+<li>senior user (represents all users) is responsible for specifying and realizing the benefits (continued commitment to the project)</li>
+</ul>
+<h4>Content of the Business Case</h4>
+<ul>
+<li>reasons for project, estimated costs, risks (summarized) and expected benefits and dis-benefits</li>
+<li>also includes timescales (project start/end, when will benefits be realized) and an investment appraisal (ROI calculation, costs vs. benefits)</li>
+<li>three business options: do nothing, do the minimum, do something</li>
+</ul>
+<h3>Organization</h3>
+<ul>
+<li>don't rush into implementation right away, otherwise you might find yourself chasing ghosts</li>
+<li>define and establish the project's structure of accountability and responsibilities (or: the &quot;who&quot;)</li>
+<li>responsibilities are assigned to roles (see core principles)</li>
+<li>one person can have multiple roles</li>
+<li>each project needs direction, management, control and communication</li>
+<li>project stakeholders need to be informed, decision makers need to be on the board</li>
+</ul>
+<h4>Main interests / stakeholders</h4>
+<ul>
+<li>business, user and supplier</li>
+<li>usually the executive represents the <strong>business</strong> role</li>
+<li><strong>users</strong> are in the project board to make sure that the correct product is developed in good quality (senior user, connects PMT and users), supply benefits information</li>
+<li><strong>supplier</strong> provides resources and skills, represented by senior supplier</li>
+<li>business assurance vs. user assurance = value for money vs. product works as expected</li>
+<li>defined responsibilities for directing, managing and delivering</li>
+</ul>
+<h4>four levels of project organization</h4>
+<ol>
+<li>Corporate or programme management (comissioning the project)</li>
+<li>Direction level: Project Board (make decisions, approve resources, plans, deviations)</li>
+<li>Management level: Project Manager (run the project according to the goals)</li>
+<li>Delivery level: Team Manager (create products with a certain quality within timescale and costs)</li>
+</ol>
+<p>Project Management Team includes the three lower levels.</p>
+<h4>Project Board</h4>
+<ul>
+<li>consist of executive, senior user and senior supplier (decision makers)</li>
+<li>only one executive, but potentially multiple senior users/suppliers</li>
+<li>executive owns Business Case and has the final word on decisions</li>
+<li>PB is accountable for success/failure of the project and provides a unified direction to project and PM</li>
+<li>PB provides resources and funds, supports the PM, ensures effective communication</li>
+<li>PB may delegate responsibility to a Change Authority (person/group)</li>
+</ul>
+<h4>Project Manager / Team Manager</h4>
+<ul>
+<li>PM manages on day-to-day-basis and usually comes from the customer (preferred by PRINCE2)</li>
+<li>needs to be proactive, may take roles Project Support, Team Manager and Change Authority</li>
+<li>stakeholder management: identify and communicate effectively with people that have interest in project outcome</li>
+<li>team manager is optional, may be needed for geographical reasons or when the project is big or complex/highly specialized</li>
+</ul>
+<h4>Communication Management Strategy</h4>
+<ul>
+<li>document describing how communication will be done (what, to whom, how often)</li>
+<li>essentially the <strong>rules of engagement</strong> of communication</li>
+<li>responsibility of the PM during Initiation Stage</li>
+<li>contains information on communication methods, tools/techniques, reporting, timing, roles &amp; responsibilities, stakeholders, needed information</li>
+</ul>
+<h3>Quality</h3>
+<ul>
+<li>define and implement a system that will create and verify that products are fit for use</li>
+<li>product needs to meet the expectations and can be used as intended</li>
+<li>product descriptions must include quality criteria (e.g. dishwasher-proof, keeps color for 20 years) to get some details</li>
+<li>quality: total amount of features/characteristics of a product</li>
+<li>provides a method to specify quality, carry out quality control, explain how to get quality approved and facilitates quality management during the project</li>
+</ul>
+<h4>Approach</h4>
+<ul>
+<li>Quality Planning: identifying the products to control, writing a product description for them (quality criteria, assessment, methods, acceptance procedures, responsibilities for people)</li>
+<li>Quality control: implement and track quality methods</li>
+<li>Quality assurance: focus on quality in the <strong>organization</strong>, independent review, complies to company standards, quality processes are in place</li>
+<li>project assurance: inside the PMT, duty of the PB (will delegate to make sure project runs smoothly regarding performance in user, supplier and business areas</li>
+</ul>
+<h4>Quality planning</h4>
+<ul>
+<li>agree on acceptance criteria with Project Board</li>
+<li>communicate agreements to stakeholders</li>
+<li>establish how quality can be controlled (baseline and tolerances)</li>
+</ul>
+<h5>Customer quality expectations</h5>
+<ul>
+<li>get the quality expectations (e.g. from the client)</li>
+<li>typical questions: budget for critical issues, what needs to be ready on launch, what's the cost for the company if product cannot be used</li>
+<li>priorizing via <strong>M</strong>o<strong>SC<strong>o</strong>W</strong></li>
+</ul>
+<h5>Acceptance critiera</h5>
+<ul>
+<li>customer and supplier agree on acceptance criteria that the product must satisfy when complete</li>
+<li>can be a simple list with the criteria itself, its priorization (MoSCoW) and the current status (Yes/No)</li>
+<li>responsibilities: PM collects inspection/survey and other documents, executive confirms project and manufacturing, Senior User is responsible for all other acceptance criteria</li>
+</ul>
+<h5>Quality Management Strategy document</h5>
+<ul>
+<li>defines quality requirements and control methods for all products in a project</li>
+<li>defines how quality standards are applied (&quot;how quality will be done&quot;)</li>
+<li>typical topics: what system/standard, tools and techniques, who is responsible for documenting and approving/confirming, timing of activities</li>
+</ul>
+<h5>Project Product descriptions</h5>
+<ul>
+<li>created for all products as part of the planning activities (before Project Plan is completed)</li>
+<li>needs to contain quality criteria, acceptance methods and acceptance responsibilities</li>
+<li>typical content: identififier, title (of the product), purpose, composition (parts), quality criteria, q. tolerance, q. method, q. skills (e.g. knowledge for testing), q. responsibilities</li>
+<li>project product description (one document) is the description of the main product and more like an overview and is created in the Start Up phase (usually 2-4 pages with a lot of quality-related information)</li>
+</ul>
+<h5>Quality register</h5>
+<ul>
+<li>diary of quality events during the project</li>
+<li>may be a spreadsheet with these columns: product id, name, producer, reviewer, approver, target/actual review date, target/actual approve date, result</li>
+<li>most of the data can be retrieved from the plans documents</li>
+</ul>
+<h4>Quality review (meeting)</h4>
+<ul>
+<li>four roles: chair (host), presenter (represents product producers), reviewer (reviews, asks, confirms), administrator (admin support for chair) or CRAP</li>
+<li>objectives: assess products against criteria, involve stakeholders, provide confirmation, sign off the product (create baseline, no more changes)</li>
+<li>output: decision to quality-approve products or not (complete, conditionally complete or incomplete)</li>
+</ul>
+<h3>Plans</h3>
+<ul>
+<li>failing to plan is planning to fail</li>
+<li>plan always needs to show that targets are achievable</li>
+<li>project plan answers Why, What, Who, When and How much</li>
+<li>plan theme provides a framework to design, develop and maintain project plans</li>
+</ul>
+<h4>Projects Plan levels</h4>
+<ul>
+<li>Project Plan: direction level (so high-level), used by Project Board, shows major products, resources, activities, their cost and when they will be delivered, approved by executive, will be baselined for later reference</li>
+<li>Stage Plan: management level, created for each stage with more detail, used by PM day-to-day</li>
+<li>Team Plans: delivery level (team manager), plan the work in Work Packages</li>
+<li>there may be Exception plans (when out of tolerances, get porject bac on track, replaces project/stage plan, PM must inform PB) </li>
+<li>there will be a benefits review plan (part of business case)</li>
+<li>typical contents of plan: prerequisites, assumptions, incorporated lessons, budget, monitoring and control information, tolerances (time, cost, scope and maybe risk, quality, benefits), product descriptions (including quality information)</li>
+</ul>
+<h4>Product-based planning</h4>
+<p>four steps:</p>
+<ol>
+<li>write Project Product Description (describe main product, SU phase)</li>
+<li>create product breakdown structure (list all products)</li>
+<li>write product descriptions (for required products)</li>
+<li>create product flow diagram (product flows/interdependencies, product sequence, a bit like an IKEA assembly diagram)</li>
+</ol>
+<p>background</p>
+<ul>
+<li>senior user/senior supplier provide information on project product description, PM coordinates work (consult with senior user, executive, specialists)</li>
+<li>product breakdown structure provides a hierarchical overview (may be a mind map)</li>
+<li>product checklist lists all major products and delivery dates</li>
+<li>iterative process, clarifies scope</li>
+<li>shows interdependencies and avoids wrong expectations</li>
+<li>plans help to focus on products and manage by stages</li>
+</ul>
+<h4>Creation of plans</h4>
+<ul>
+<li>Initiation Stage Plan for the first stage is created by PM</li>
+<li>Product-based plans are created by PM and/or TM, used in SU, IP and SB processes</li>
+<li>Stage Plan is created by PM during SB process</li>
+<li>project plan needs to be approved by PB, is also updated in SB process and at the end of project</li>
+<li>team plans are optional, created by TM</li>
+<li>Executive approves project plan</li>
+</ul>
+<h3>Risk</h3>
+<ul>
+<li>risk = set of events which will have an effect on achieving the project objectives / improve the ability of project to succeed</li>
+<li>all projects introduce something new and uncertainty is risk</li>
+<li>risk may be either <strong>threat</strong> or <strong>opportunity</strong></li>
+<li>risk management is one of the main tasks of the PM</li>
+<li>three steps to Risk Management: identification (describe), assess (likelihood, impact) and control (respond)</li>
+<li>risk appetite: how much risk is a company willing to accept</li>
+<li>risk tolerance: acceptable/unacceptable deviations from what is expected</li>
+</ul>
+<h4>Risk Management Strategy</h4>
+<ul>
+<li>document that defines project procedures for Risk Management</li>
+<li>how risks will be identified, assessed, controlled and communicated (techniques and standards to be applied)</li>
+<li>also provides guidelines for risk communication</li>
+<li>template may already exist in the company/programme</li>
+<li>created in the IS by the PM</li>
+</ul>
+<h4>Risk Register</h4>
+<ul>
+<li>captures and maintains information on all risks (threats/opportunities)</li>
+<li>record of risks with their history</li>
+<li>can be a spreadsheet with those columns: identifier, author, date, category (e.g. quality, network, legal, supplier), description (cause/event/effect), probability impact (high/medium/low), proximity (when, e.g. long term or early), risk response category, response, status, owner (reporter), actionee (reponsible for action)</li>
+</ul>
+<h4>Risk Management procedure</h4>
+<p>five steps:</p>
+<ol>
+<li>Identify (complete RMS document first, identify context, use checklists and lessons learned from other projects and brainstorm with specialists)</li>
+<li>Assess (probability and impact)</li>
+<li>Plan (steps for response)</li>
+<li>Implement (carry out responses from step 3)</li>
+<li>Communicate (stakeholders, use existing reports)</li>
+</ol>
+<p>or <strong>I</strong> <strong>A</strong>te <strong>P</strong>eaches <strong>I</strong>n <strong>C</strong>hina.</p>
+<ul>
+<li>risks are expressed in cause (Volcano eruprion in Iceland)/event (wind brings ash into UK airspace)/effect (80% flights delayed/cancelled)</li>
+<li>or: due to X, there is a risk of Y that could result in Z</li>
+<li>estimating is about assessing the probability, impact and proximity for each risk (e.g. via Expected Value or Pareto)</li>
+<li>evaluating is to group all risks and get a risk value for entire project</li>
+<li>each thread/opportunity must be understood regarding probability, impact, proximity and how impact may change over time of project</li>
+<li>planning responses to risk is to reduce threats and maximize opportunities</li>
+<li>exising reports are used for communication, e.g. Checkpoint/Highlight/End Stage/ End Project/Lessons reports</li>
+</ul>
+<h5>Responses to threads/opportunities</h5>
+<ul>
+<li>threats: avoid, reduce (probability or impact), fallback (contingency/plan of actions), transfer (to another party, e.g. insurance), share (common in customer/supplier), accept</li>
+<li>opportunities: exploit (use it), enhance (improve likelihood), share, reject</li>
+</ul>
+<h4>Risk budget</h4>
+<ul>
+<li>money that is put aside to deal with threats/opportunities</li>
+<li>cannot be used for anything else</li>
+</ul>
+<h3>Change</h3>
+<ul>
+<li>purpose: identify, assess and control any potential changes in products rhat have been approved/baselined</li>
+<li>handle change requests and issues that arise during the project (<strong>issue and change control</strong>)</li>
+<li>don't prevent changes, but get them agreed and approved before executing them</li>
+<li>issues should be prioritized following <strong>M</strong>o<strong>SC<strong>o</strong>W</strong></li>
+</ul>
+<h4>Types of issues</h4>
+<ol>
+<li>Request for change: on a baselined product</li>
+<li>Off-specification: agreed to be done but not offered by supplier</li>
+<li>Problem/concern which would also be a question: anything that the PM needs to resolve or escalate, can be positive/negative</li>
+</ol>
+<h4>Management products</h4>
+<ol>
+<li>Configuration Management strategy: document describing how issues and changes will be handled (e.g. identify/control products, tools, data to keep, responsibilities, scale)</li>
+<li>Configuration Items Records: provide a set of data for each product (metadata, list of attributes), identifiy user access, relationships and status</li>
+<li>Product Status Account: report on status of products (e.g. on Stage level)</li>
+<li>Daily Log: diary/notes for all informal information</li>
+<li>Issue Register: spreadsheet to capture and maintain issues (formal)</li>
+<li>Issue Reports: describes issue(s) in detail, lists related issues</li>
+</ol>
+<h4>Change budget</h4>
+<ul>
+<li>sum of money that customer/supplier agree to use to fund requests for change</li>
+<li>Change Authority (assigned by PB) manages this budget</li>
+<li>PM can always refer to the change process (e.g. via form) for all change requests, never has to say &quot;no&quot;</li>
+</ul>
+<h4>Configuration Management activities</h4>
+<p>Maintain and control changes for each product, two activities at project start:</p>
+<ol>
+<li>Planning: To what level will Change Management be done? Which documents/information do we need?</li>
+<li>Identification: how to identify each product uniquely (e.g. project-product-owner-version-date)</li>
+</ol>
+<p>three activities during project:</p>
+<ol>
+<li>Control: Nothing moves and nothing changes without authorization (baselining, archiving, distribution copies, ...)</li>
+<li>Status Accounting: reporting current/historical data for each product in product Status Account format</li>
+<li>Verification &amp; Audit: Are products in line with Configuration Items Records?</li>
+</ol>
+<h4>Issue and Change Control Procedure</h4>
+<ul>
+<li>Capture: determine issue type and if formal/informal</li>
+<li>Examine: assess impact on project objectives</li>
+<li>Propose: actions to take (identifiy options, evaluate, recommend)</li>
+<li>Decide: someone approves/rejects the recommended solution</li>
+<li>Implement: take corrective action</li>
+</ul>
+<p>or <strong>CEPDI</strong>.</p>
+<ul>
+<li>data can be stored in Daily Log, Issue Register and Issue Report</li>
+<li>issues are always escalated to level above (PM &gt; PB)</li>
+</ul>
+<h3>Progress</h3>
+<ul>
+<li>a good PM needs to track progress (with help of a system), so <strong>monitor and compare achievements</strong> against the plannings</li>
+<li>provide a forecast and be able to control any unacceptable deviations</li>
+<li>Exception: there will be a deviation beyond the agreed tolerance levels</li>
+<li>PM may set tolerance levels and manage minor deviations himself, only alerting PB for bigger issues</li>
+<li>there are <strong>Work Package</strong>, <strong>Stage-</strong> and <strong>Project</strong> tolerances</li>
+</ul>
+<h4>Progress approach</h4>
+<ol>
+<li>delegate authority from one level to the next</li>
+<li>divide project into management stages, authorize only one stage at a time</li>
+<li>time-driven and event-driven progress reports (e.g. Highlight Reports)</li>
+<li>raising exceptions: alert above layer if big issue occurs</li>
+</ol>
+<p>Delegating authority:</p>
+<p><strong>Corporate/Programme management</strong> &gt;&gt;&gt; Project tolerances &gt;&gt;&gt; <strong>PB</strong> &gt;&gt;&gt; Stage tolerances &gt;&gt;&gt; <strong>PM</strong> &gt;&gt;&gt; Work Package tolerances &gt;&gt;&gt; <strong>TM</strong></p>
+<p><strong>TM</strong> &gt;&gt;&gt; Work package progress/issues &gt;&gt;&gt; <strong>PM</strong> &gt;&gt;&gt; Stage progress/exceptions &gt;&gt;&gt; <strong>PB</strong> &gt;&gt;&gt; Project progress/exceptions &gt;&gt;&gt; <strong>Corporate/Programme management</strong></p>
+<h4>PB Controls</h4>
+<ol>
+<li>Authorizations: e.g. authorize next stage</li>
+<li>Progress updates: get regular reports from PM</li>
+<li>Exceptions &amp; Changes: receive Exception and Issue Reports </li>
+</ol>
+<h4>PM Controls</h4>
+<ol>
+<li>Authorizations: authorizes Work packages</li>
+<li>Progress updates: receive Checkpoint Reports from TM or team members</li>
+<li>Exceptions &amp; Changes: review progress via registers and logs, changes will be handled via Change Control</li>
+</ol>
+<h4>Management Stages</h4>
+<ul>
+<li>decision points for PB between stages</li>
+<li>never overlap</li>
+<li>chance to check viability, review, authorize</li>
+<li>PM may manage on behalf of PB</li>
+<li>at minimum are two stages in project (IS, delivery stage)</li>
+<li>number of stages depends on duration, key decision points, risk, amount of control by PB, confidence</li>
+<li>stages should be short when there is a lot of risk/complexity</li>
+</ul>
+<h4>Technical Stages</h4>
+<ul>
+<li>how companies/teams work, usually linked to skills (e.g. requirements, development, testing)</li>
+<li>grouping work together (by techniques or products)</li>
+<li>may overlap each other and span a Management Stage Boundary</li>
+</ul>
+<h4>Event- and Time-driven Controls</h4>
+<ul>
+<li>event-driven controls take place when something happens (events)</li>
+<li>time-driven controls take place at pre-defined intervals (e.g. send Highlight Report every two weeks)</li>
+</ul>
+<h4>Reports to report Progress</h4>
+<ul>
+<li>Checkpoint Reports: TM reports to PM, progress compared to agreed team plan</li>
+<li>Highlight Report: PM reports status of stage compared to Stage Plan (not much detail, 1-2 pages)</li>
+<li>End Stage Report: PM creates at end of stage, PB decides whether to authorize, modify scope or stop the project</li>
+<li>End Project Report:  PM creates during Closing process and PB authorizes closure, provides overview what went well and what not, review of benefits</li>
+</ul>
+<p>Relevant documents for PM:</p>
+<ul>
+<li>PM checks progress via Checkpoint Reports (from TM) and Quality Register (maybe also Lessons Log from previous projects)</li>
+<li>PM keeps track of prograss via Daily Log, Issue Register, Product Status Account, Quality Register and Risk Register</li>
+</ul>
+<h2>Processes</h2>
+<ul>
+<li>structured set of activities to accomplish a specific objective</li>
+<li>
+<p>seven in total:</p>
+</li>
+<li>
+<p>Starting Up (SU)</p>
+</li>
+<li>Initiating a project (IS)</li>
+<li>Directing a project</li>
+<li>Controlling a stage (CS)</li>
+<li>Managing product delivery</li>
+<li>Managing a Stage Boundary (SB)</li>
+<li>Closing a project</li>
+</ul>
+<p>lifecycle for most important themes:
+- Business Case: created in SU, completed/baselined in IS, updated in SB, final update in Closing
+- Plan: PPD in SU, plan created/baselined in IS, updated in SB, final update in Closing</p>
+<h3>Pre-project</h3>
+<ul>
+<li>before the actual project starts</li>
+<li>first, create a project mandate document (trigger for the project, what is desired)</li>
+<li>verify that project is worthwhile (prevent poor projects from starting)</li>
+<li>PB reviews the <strong>Project Brief</strong> and decides to initiate the project </li>
+</ul>
+<h3>IS</h3>
+<ul>
+<li>define product quality, project timeline, costs, risk analysis and commitment of resources</li>
+<li>assemble Project Initiation Documentation (PID)</li>
+<li>PID contains almost all project information to date (Project Plan, Business Case, Strategy documents, Risk Register, Team Plan)</li>
+<li>create Business Case and Benefits Review Plan</li>
+<li>create project and stage plan</li>
+<li>project board gets the PID and authorizes the project</li>
+</ul>
+<h3>CS</h3>
+<ul>
+<li>assign work (work packages)</li>
+<li>check deliverables for quality</li>
+<li>check that stage is in line with Stage Plan and forecasts are within tolerances</li>
+<li>PM maintains logs, registers and Configuration Items Record</li>
+<li>PM also keeps PB up to date via Highlight Reports</li>
+<li>TM keeps PM up to date via Checkpoint Reports</li>
+<li>in SB, PM will update the Business Case and create End Stage Report and the next Stage Plan</li>
+</ul>
+<h3>Delivery Stage</h3>
+<ul>
+<li>PM accepts products and gets approval for them</li>
+<li>close the project by comparing project with the original plan, write End Project Report, plan post-project benefits reviews and deliver Lessons Learned report</li>
+<li>PB revises data and authorizes closing</li>
+</ul>
+<h3>The seven processes</h3>
+<h4>Directing a project</h4>
+<ul>
+<li>responsibility of PB, runs from start to end</li>
+<li>PB authorizes stages and applies <strong>Management by Exception</strong></li>
+<li>purpose: enable PB to be accountable for the project by making key decisions, have overall control and delegate day-to-day work to PM</li>
+<li>objectives: provide authority to initiate the project, deliver products (start delivery stages) and close the project, provide direction and control (PM can seek advice anytime), be the interface to CPM, ensure that post-project benefits will be reviewed</li>
+<li>main outputs are approvals (e.g. Stage Plan, Exception Plan, PID), authorizations and notifications</li>
+</ul>
+<h4>Starting up a project</h4>
+<ul>
+<li>responsibility of PB and Executive, occurs before project starts, should be brief (avg. time could be one week depending on size and complexity)</li>
+<li>purpose: reasons for project are established, PMT is assigned, Stage Plan for IS is created (do we have a worthwhile and viable product?)</li>
+<li>objectives: create outline Business Case, obtain advice from other projects, choose/appoint PMT, create Project Brief (information of scope of the project), create PPD, create Stage Plan (for IS)</li>
+<li>also the general project approach should be defined (update existing product / from scratch / off-the-shelf solution, internal / external)</li>
+<li>project mandate will be expanded to Project Brief</li>
+<li>Project Brief also contains scope, roles &amp; responsibilities and performance targets</li>
+</ul>
+<h4>Initiating a project</h4>
+<ul>
+<li>purpose: understand work that needs to be done to deliver required products (build correct foundation for all stakeholders)</li>
+<li>objectives: what are reasons, benefits and risks, scope (MoSCoW), time of delivery, ensure quality, identify risks, issues and changes, monitor progress and inform whom and how often</li>
+<li>activities: prepare Risk/Configuration/Quality/Communication Management Strategy, setup project controls, create Project Plan, complete the Business Case, assemble PID (contains information from most documents created to date)</li>
+<li>begin with the strategy documents, complete Business Case after Project Plan (since PP contains time and cost information)</li>
+<li>PB needs to &quot;allow&quot; the project to continue via signing off the PID</li>
+</ul>
+<h4>Controlling a stage</h4>
+<ul>
+<li>PM watches work, observes changes</li>
+<li>purpose: assign and monitor work, deal with issues, take corrective action, report progress to PB/stakeholders (communication)</li>
+<li>objectives: focus on delivery, control risks and issues, keep Business Case under review, deliver products to agreed quality within cost and time and achieve benefits</li>
+<li>main input documents are Stage Plan and PID</li>
+<li>monitoring via Checkpoint Reports and Quality Register (and other registers)</li>
+<li>report to PB via Highlight Report</li>
+</ul>
+<h4>Managing product delivery</h4>
+<ul>
+<li>responsibility of the TM, planned products are created, work gets done</li>
+<li>purpose: manage and control work between PM and TM by placing formal requirements on accepting/executing/delivery of products</li>
+<li>objectives: products are authorized and agreed, team is aware and understands effort, time and cost, deliverables are within tolerances, TM provides progress information</li>
+<li>TM needs to demonstarte that products meet their quality criteria (e.g. via Quality Review Meeting)</li>
+<li>work packages have just three simple activities: accept, do and deliver (update Quality Register)</li>
+</ul>
+<h4>Managing Stage Boundary process</h4>
+<ul>
+<li>purpose: provide overview of performance of the current stage, update project Plan and Business Case, create Stage Plan for next stage</li>
+<li>objectives: products need to get approved, review documents (PID, Business Case, Project Plan, Risk Register, Lessons Log), request authorization to start next stage</li>
+<li>End Stage report and next Stage Plan are submitted to PB</li>
+<li>report the performance of the existing stage (PB evaluates against Stage Plan), products and benefits have been delivered (continued business justification)</li>
+</ul>
+<h4>Closing a project</h4>
+<ul>
+<li>purpose: fixed point to check if the project reached its objectives and products were accepted</li>
+<li>objectives: verify user acceptance, products are supported after the project, review performance, assess benefits (now and future), address open issues and risks with follow-up action recommendations</li>
+<li>ownership of the project gets transferred to the customer (handover)</li>
+<li>update lessons Log, CIR, Benefits Review Plan</li>
+<li>prepare project for closure by creating End Project Report, Lessons Learned Report and Acceptance Record</li>
+</ul>
+<p>Sources: </p>
+<ul>
+<li><a href="http://quizlet.com/9018193/prince2-foundation-flash-cards/">Flashcards</a></li>
+<li><a href="http://www.mgmtplaza.com/elearn/dirBooks/P2FPM42.pdf">PRINCE2 foundation training manual by Management Plaza</a>.</li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

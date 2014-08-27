@@ -490,6 +490,10 @@ lifecycle for most important themes:
 
 
 
-Sources: [Flashcards](http://quizlet.com/9018193/prince2-foundation-flash-cards/)
+Sources: 
+
+- [PRINCE2 foundation training manual by Management Plaza](http://www.mgmtplaza.com/elearn/dirBooks/P2FPM42.pdf)
+- [Flashcards](http://quizlet.com/9018193/prince2-foundation-flash-cards/)
+
 
 
