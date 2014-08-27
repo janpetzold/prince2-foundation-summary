@@ -60,7 +60,7 @@ Organization also provides information on Project management team and its struct
 PRINCE2 plan is a document describing how, when and by whom a target can be achieved. See targets above. Project plan gets updated in every stage and is compared to the baselined Project plan. There are different plans:
 
 - project plan (high level, mainly for Project Board)
-- stage plan (day-to-day-work of the PM)
+- stage plan (day-to-day-work of the PM, focused on products)
 - team plan (for team manager)
 
 ### common project failures ###
@@ -88,7 +88,8 @@ PRINCE2 plan is a document describing how, when and by whom a target can be achi
 
 So what do you get?
 
-- output: what product will be delivered (users will use them / specialist products)
+- output: what product will be delivered (for users)
+- PRINCE2 distinguishes between specialist (given to users) and management products (documents for communication)
 - outcome: what can users do better with that product (result of change)
 - benefits: measurable improvements by using this product (advantages, usually by at least one of the stakeholders)
 
@@ -160,7 +161,7 @@ Project Management Team includes the three lower levels.
 - Quality Planning: identifying the products to control, writing a product description for them (quality criteria, assessment, methods, acceptance procedures, responsibilities for people)
 - Quality control: implement and track quality methods
 - Quality assurance: focus on quality in the **organization**, independent review, complies to company standards, quality processes are in place
-- project assurance: inside the PMT, duty of the Project Board, related to the project
+- project assurance: inside the PMT, duty of the PB (will delegate to make sure project runs smoothly regarding performance in user, supplier and business areas
 
 #### Quality planning #####
 - agree on acceptance criteria with Project Board
@@ -173,7 +174,7 @@ Project Management Team includes the three lower levels.
 - priorizing via **M**o**SC**o**W**
 
 ##### Acceptance critiera #####
-- customer and supplier agree on acceptance criteria that the product should have when complete
+- customer and supplier agree on acceptance criteria that the product must satisfy when complete
 - can be a simple list with the criteria itself, its priorization (MoSCoW) and the current status (Yes/No)
 - responsibilities: PM collects inspection/survey and other documents, executive confirms project and manufacturing, Senior User is responsible for all other acceptance criteria
 
@@ -366,12 +367,14 @@ Delegating authority:
 - decision points for PB between stages
 - never overlap
 - chance to check viability, review, authorize
+- PM may manage on behalf of PB
 - at minimum are two stages in project (IS, delivery stage)
 - number of stages depends on duration, key decision points, risk, amount of control by PB, confidence
 - stages should be short when there is a lot of risk/complexity
 
 #### Technical Stages ####
 - how companies/teams work, usually linked to skills (e.g. requirements, development, testing)
+- grouping work together (by techniques or products)
 - may overlap each other and span a Management Stage Boundary
 
 #### Event- and Time-driven Controls ####
@@ -382,17 +385,111 @@ Delegating authority:
 - Checkpoint Reports: TM reports to PM, progress compared to agreed team plan
 - Highlight Report: PM reports status of stage compared to Stage Plan (not much detail, 1-2 pages)
 - End Stage Report: PM creates at end of stage, PB decides whether to authorize, modify scope or stop the project
-- End Project Report:  PM creates during Closing process, PB authorizes closure
+- End Project Report:  PM creates during Closing process and PB authorizes closure, provides overview what went well and what not, review of benefits
 
 Relevant documents for PM:
 
 - PM checks progress via Checkpoint Reports (from TM) and Quality Register (maybe also Lessons Log from previous projects)
 - PM keeps track of prograss via Daily Log, Issue Register, Product Status Account, Quality Register and Risk Register
 
+## Processes ##
+- structured set of activities to accomplish a specific objective
+- seven in total:
+
+1. Starting Up (SU)
+2. Initiating a project (IS)
+3. Directing a project
+4. Controlling a stage (CS)
+5. Managing product delivery
+6. Managing a Stage Boundary (SB)
+7. Closing a project
+
+lifecycle for most important themes:
+- Business Case: created in SU, completed/baselined in IS, updated in SB, final update in Closing
+- Plan: PPD in SU, plan created/baselined in IS, updated in SB, final update in Closing
+
+### Pre-project ###
+- before the actual project starts
+- first, create a project mandate document (trigger for the project, what is desired)
+- verify that project is worthwhile (prevent poor projects from starting)
+- PB reviews the **Project Brief** and decides to initiate the project 
+
+### IS ###
+- define product quality, project timeline, costs, risk analysis and commitment of resources
+- assemble Project Initiation Documentation (PID)
+- PID contains almost all project information to date (Project Plan, Business Case, Strategy documents, Risk Register, Team Plan)
+- create Business Case and Benefits Review Plan
+- create project and stage plan
+- project board gets the PID and authorizes the project
+
+### CS ###
+- assign work (work packages)
+- check deliverables for quality
+- check that stage is in line with Stage Plan and forecasts are within tolerances
+- PM maintains logs, registers and Configuration Items Record
+- PM also keeps PB up to date via Highlight Reports
+- TM keeps PM up to date via Checkpoint Reports
+- in SB, PM will update the Business Case and create End Stage Report and the next Stage Plan
+
+### Delivery Stage ###
+- PM accepts products and gets approval for them
+- close the project by comparing project with the original plan, write End Project Report, plan post-project benefits reviews and deliver Lessons Learned report
+- PB revises data and authorizes closing
+
+### The seven processes ###
+
+#### Directing a project ####
+- responsibility of PB, runs from start to end
+- PB authorizes stages and applies **Management by Exception**
+- purpose: enable PB to be accountable for the project by making key decisions, have overall control and delegate day-to-day work to PM
+- objectives: provide authority to initiate the project, deliver products (start delivery stages) and close the project, provide direction and control (PM can seek advice anytime), be the interface to CPM, ensure that post-project benefits will be reviewed
+- main outputs are approvals (e.g. Stage Plan, Exception Plan, PID), authorizations and notifications
+
+#### Starting up a project ####
+- responsibility of PB and Executive, occurs before project starts, should be brief (avg. time could be one week depending on size and complexity)
+- purpose: reasons for project are established, PMT is assigned, Stage Plan for IS is created (do we have a worthwhile and viable product?)
+- objectives: create outline Business Case, obtain advice from other projects, choose/appoint PMT, create Project Brief (information of scope of the project), create PPD, create Stage Plan (for IS)
+- also the general project approach should be defined (update existing product / from scratch / off-the-shelf solution, internal / external)
+- project mandate will be expanded to Project Brief
+- Project Brief also contains scope, roles & responsibilities and performance targets
+
+#### Initiating a project ####
+- purpose: understand work that needs to be done to deliver required products (build correct foundation for all stakeholders)
+- objectives: what are reasons, benefits and risks, scope (MoSCoW), time of delivery, ensure quality, identify risks, issues and changes, monitor progress and inform whom and how often
+- activities: prepare Risk/Configuration/Quality/Communication Management Strategy, setup project controls, create Project Plan, complete the Business Case, assemble PID (contains information from most documents created to date)
+- begin with the strategy documents, complete Business Case after Project Plan (since PP contains time and cost information)
+- PB needs to "allow" the project to continue via signing off the PID
+
+#### Controlling a stage ####
+- PM watches work, observes changes
+- purpose: assign and monitor work, deal with issues, take corrective action, report progress to PB/stakeholders (communication)
+- objectives: focus on delivery, control risks and issues, keep Business Case under review, deliver products to agreed quality within cost and time and achieve benefits
+- main input documents are Stage Plan and PID
+- monitoring via Checkpoint Reports and Quality Register (and other registers)
+- report to PB via Highlight Report
+
+#### Managing product delivery ####
+- responsibility of the TM, planned products are created, work gets done
+- purpose: manage and control work between PM and TM by placing formal requirements on accepting/executing/delivery of products
+- objectives: products are authorized and agreed, team is aware and understands effort, time and cost, deliverables are within tolerances, TM provides progress information
+- TM needs to demonstarte that products meet their quality criteria (e.g. via Quality Review Meeting)
+- work packages have just three simple activities: accept, do and deliver (update Quality Register)
+
+#### Managing Stage Boundary process ####
+- purpose: provide overview of performance of the current stage, update project Plan and Business Case, create Stage Plan for next stage
+- objectives: products need to get approved, review documents (PID, Business Case, Project Plan, Risk Register, Lessons Log), request authorization to start next stage
+- End Stage report and next Stage Plan are submitted to PB
+- report the performance of the existing stage (PB evaluates against Stage Plan), products and benefits have been delivered (continued business justification)
+
+#### Closing a project ####
+- purpose: fixed point to check if the project reached its objectives and products were accepted
+- objectives: verify user acceptance, products are supported after the project, review performance, assess benefits (now and future), address open issues and risks with follow-up action recommendations
+- ownership of the project gets transferred to the customer (handover)
+- update lessons Log, CIR, Benefits Review Plan
+- prepare project for closure by creating End Project Report, Lessons Learned Report and Acceptance Record
 
 
 
 Sources: [Flashcards](http://quizlet.com/9018193/prince2-foundation-flash-cards/)
 
 
-average time of starting a project could be one week (depending on size and complexity)
