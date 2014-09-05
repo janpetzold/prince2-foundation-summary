@@ -57,37 +57,17 @@ framework for good project practice for those involved in a project:
 
 ### PRINCE2 themes ###
 - themes: knowledge areas of the project
+- aspects of project management that need to be adressed continuously throughout the project
 - core activity and need to be defined whenever a project starts
-
-- **BC** (business justification, reason for project)
-- **progress** (manage by stages/exception, business justification
-- highlight and stage reports for project board, compare actual achievements to the planned ones, give forecast, control deviations
-- Where are we? Should we go on?
-- **organization** (roles/responsibilities)
-- who represents sponsor, users, suppliers
-- **plans** (focus on products)
-- includes product descriptions and project plan, needs project steps, cost and quality
-- **quality**
-- products need to match users expectations, reach agreed quality level
-- **risk**
-- evaluate and manage risks (threats/opportunities)
-- **change** 
-- issues and their impact, how to assess, act on and manage
-- also covers Configuration Management
-- **lessons learned** (learn from experience)
-- **tailoring**
-
-### Project Management Team ###
-
-Organization also provides information on PMT and its structure and accountability. This team...
-
-- represents **business**, **user** and **supplier** stakeholders
-- PRINCE2 is based on customer/supplier environment: customer specifies the result and pays, supplier provides resources/skills and delivers the results
-- customer/supplier can be inside the same company
-- usually the executive represents the business role
-- PMT has defined responsibilities for directing, managing and delivering the project
-- defined responsibilities for directing, managing and delivering
-- have a strategy to manage communication between stakeholders
+- **BC**: The "why"
+- **Progress**: The "Where are we now? Where are we going? Should we carry on?"
+- **Organization**: The "who"
+- **Plans**: The "how", "how much" and "when"
+- **Quality**: The "what"
+- **Risk**: The "what if"
+- **Change**: "What's the impact?"
+- **Lessons learned**
+- **Tailoring**
 
 ### PRINCE2 plan ###
 - document describing how, when and by whom a target can be achieved
@@ -118,13 +98,13 @@ Three major plans
 - used to document justification for project based on estimated costs against anticipated benefits
 - one of the first things of a PM: ask for the BC (although many projects don't have one)
 - continuously maintained throughout the project (because changes in requirements can also lead to changes in the BC, e.g. if additional staff is needed)
-- needs to be verified by Project Board before project starts
+- needs to be verified by PB before project starts
 - Executive is resposible for the BC and for securing funding
 
 So what do you get?
 
 - output: what product will be delivered (for specialist users)
-- PRINCE2 distinguishes between specialist (given to users) and management products (documents for communication)
+- PRINCE2 distinguishes products between management (documents for communication) and specialists (given to users) 
 - outcome: what can users do better with that product (result of change derived from output)
 - benefits: measurable improvements by using this product (advantages, usually by at least one of the stakeholders)
 
@@ -140,19 +120,26 @@ So what do you get?
 
 ### Organization ###
 - purpose: define and establish the project's structure of accountability and responsibilities (or: the "who")
-- responsibilities are assigned to roles (see core principles)
+- responsibilities are assigned to roles
 - one person can have multiple roles
-- project stakeholders need to be informed, decision makers need to be on the board
+- stakeholders need to be informed, decision makers need to be on the board
 
 #### four levels of project organization ####
 1. CPM: Comissioning the project
-2. Direction level: PM (make decisions, approve resources, plans, deviations)
+2. Direction level: PB (make decisions, approve resources, plans, deviations)
 3. Management level: PM (run the project according to the goals)
 4. Delivery level: TM (create products with a certain quality within timescale and costs)
 
-Essentially business assurance vs. user assurance = value for money vs. product works as expected
-
 PMT includes the levels 2-4.
+
+### Project Management Team ###
+- represents **business**, **user** and **supplier** stakeholders
+- PRINCE2 is based on customer/supplier environment: customer specifies the result and pays, supplier provides resources/skills and delivers the results
+- customer/supplier can be inside the same company
+- usually the executive represents the business role
+- PMT has defined responsibilities for directing, managing and delivering the project
+- defined responsibilities for directing, managing and delivering
+- have a strategy to manage communication between stakeholders
 
 #### Project Board ####
 - consist of Executive, Senior User and Senior Supplier (decision makers)
@@ -160,6 +147,7 @@ PMT includes the levels 2-4.
 - users are in the PB to make sure that the correct product is developed in good quality (senior user, connects PMT and users), supply benefits information
 - executive owns BC and has the final word on decisions
 - PB is accountable for success/failure of the project and provides a unified direction to project and PM
+- business assurance vs. user assurance = value for money vs. product works as expected
 - PB provides resources and funds, supports the PM, ensures effective communication
 - PB may delegate responsibility to a Change Authority (person/group)
 
@@ -181,8 +169,8 @@ PMT includes the levels 2-4.
 
 ### Quality ###
 
-- define and implement a system that will create and verify that products are fit for use
-- product needs to meet the expectations and can be used as intended
+- purpose: define and implement the means by which the project will create products that are fit for purpose
+- product needs to meet the expectations and can be used as intended, ensure that benefits of these expectations are realised and achieved
 - product descriptions must include quality criteria (e.g. dishwasher-proof, keeps color for 20 years) to get some details
 - quality: total amount of features/characteristics of a product
 - provides a method to specify quality, carry out quality control, explain how to get quality approved and facilitates quality management during the project
@@ -196,7 +184,7 @@ PMT includes the levels 2-4.
 - **Quality Planning**: identifying the products to control, writing a product description for them (quality criteria, assessment, methods, acceptance procedures, responsibilities for people)
 - **Quality Control**: implement and track quality methods
 - **Quality Assurance**: focus on quality in the **organization**, independent review, complies to company standards, quality processes are in place
-- **Project Assurance**: inside the PMT, duty of the PB (will delegate to make sure project runs smoothly regarding performance in user, supplier and business areas
+- **Project Assurance**: inside the PMT, duty of the PB (will delegate to make sure project runs smoothly regarding performance in user, supplier and business areas)
 
 
 ##### Customer quality expectations #####
@@ -238,11 +226,11 @@ PMT includes the levels 2-4.
 - failing to plan is planning to fail
 
 #### PP levels ####
-- **PP**: direction level (so high-level), used by Project Board, shows major products, resources, activities, their cost and when they will be delivered, approved by executive
+- **PP**: direction level (high-level), used by Project Board, shows major products, resources, activities, their cost and when they will be delivered, approved by executive
 - will be baselined for later reference
 - **Stage Plan**: management level, created for each stage with more detail, used by PM day-to-day
 - **Team Plans**: delivery level (team manager), plan the work in Work Packages
-- there may be **Exception Plans** (when out of tolerances, get porject bac on track, replaces project/stage plan, PM must inform PB) 
+- there may be **Exception Plans** (when out of tolerances, get project back on track, replaces project/stage plan, PM must inform PB) 
 - there will be a **Benefits Review Plan** (part of BC)
 - typical contents of plan: prerequisites, assumptions, incorporated lessons, budget, monitoring and control information, tolerances, product descriptions
 - types of management products: baseline, records and reports
@@ -252,19 +240,12 @@ Products are identified first and then activities, dependencies and resources re
 
 Tasks:
 
-1. write PPD (describe main product, SU phase)
-2. create product breakdown structure (list all products)
+1. write PPD (describe main product, SU phase, Senior User/Supplier provide information)
+2. create product breakdown structure (hierarchical list all products, e.g. Mind Map)
 3. write product descriptions (for required products)
 4. create product flow diagram (product flows/interdependencies, product sequence, a bit like an IKEA assembly diagram)
 
-background
-
-- senior user/senior supplier provide information on project product description, PM coordinates work (consult with senior user, executive, specialists)
-- product breakdown structure provides a hierarchical overview (may be a mind map)
-- product checklist lists all major products and delivery dates
-- shows interdependencies and avoids wrong expectations
-- plans help to focus on products and manage by stages
-- iterative process, clarifies scope
+A product checklist lists all major products and delivery dates.
 
 #### Steps in producing a PRINCE2 plan ####
 - Design the plan
@@ -291,13 +272,12 @@ background
 - three steps to Risk Management: identification (describe), assess (likelihood, impact) and control (respond)
 - risk appetite: how much risk is a company willing to accept
 - risk tolerance: acceptable/unacceptable deviations from what is expected
-- risk owner: responsible for managing, monitoring and control of risk aspects assigned to them
+- risk owner: responsible for managing, monitoring and control of risk aspects assigned to him
 - risk actionee: carries out risk response action
 
 #### Risk Management Strategy ####
 - document that defines project procedures for Risk Management
 - how risks will be identified, assessed, controlled and communicated (techniques and standards to be applied)
-- also provides guidelines for risk communication
 - template may already exist in the company/programme
 
 #### Risk Register ####
@@ -316,12 +296,11 @@ five steps:
 
 or **I** **A**te **P**eaches **I**n **C**hina.
 
-- risks are expressed in **cause** (Volcano eruprion in Iceland) / **event** (wind brings ash into UK airspace) / **effect** (80% flights delayed/cancelled)
+- risks are expressed in **cause** (Volcano eruption in Iceland) / **event** (wind brings ash into UK airspace) / **effect** (80% flights delayed/cancelled)
 - or: due to X, there is a risk of Y that could result in Z
 - estimating is about assessing the probability, impact and proximity for each risk (e.g. via Expected Value or Pareto)
 - evaluating is to group all risks and get a risk value for entire project
 - each thread/opportunity must be understood regarding probability, impact, proximity and how impact may change over time of project
-- planning responses to risk is to reduce threats and maximize opportunities
 - existing reports are used for communication, e.g. Checkpoint/Highlight/End Stage/ End Project/Lessons reports
 
 ##### Responses to threads/opportunities #####
@@ -344,12 +323,12 @@ or **I** **A**te **P**eaches **I**n **C**hina.
 3. **Problem/Concern**: anything that the PM needs to resolve or escalate, can be positive/negative
 
 #### Management products ####
-1. Configuration Management strategy: document describing how issues and changes will be handled (e.g. identify/control products, tools, data to keep, responsibilities, scale for priorization/severity),impact assessments
-2. Configuration Items Records: provide a set of records for each product (metadata, list of attributes), identify user access, relationships and status, versions
-2. Product Status Account: report on state of products (e.g. on stage level)
-3. Daily Log: diary/notes for all informal information, useful to prepare RMS/CMS
-4. Issue Register: document to capture and maintain issues (formal), contains reporter, raised (date), prio, severity
-5. Issue Reports: describes issue(s) in detail, lists related issues, recommendation, issue type, raised by, impact assessment, decision
+1. **Configuration Management Strategy**: document describing how issues and changes will be handled (e.g. identify/control products, tools, data to keep, responsibilities, scale for priorization/severity),impact assessments
+2. **Configuration Items Records**: provide a set of records for each product (metadata, list of attributes), identify user access, relationships and status, versions
+2. **Product Status Account**: report on state of products (e.g. on stage level)
+3. **Daily Log**: diary/notes for all informal information, useful to prepare RMS/CMS
+4. **Issue Register**: document to capture and maintain issues (formal), contains reporter, raised (date), prio, severity
+5. **Issue Reports**: describes issue(s) in detail, lists related issues, recommendation, issue type, raised by, impact assessment, decision
 
 #### Change budget ####
 - sum of money that customer/supplier agree to use to fund requests for change / change analysis
@@ -371,7 +350,7 @@ three activities during project:
 #### Issue and Change Control Procedure ####
 - Capture: determine issue type and if formal/informal
 - Examine: assess impact on project objectives
-- Propose: actions to take (identifiy options, evaluate, recommend)
+- Propose: actions to take (identify options, evaluate, recommend)
 - Decide: someone approves/rejects the recommended solution
 - Implement: take corrective action
 
@@ -398,15 +377,7 @@ Delegating authority:
 
 **TM** >>> Work package progress/issues >>> **PM** >>> Stage progress/exceptions >>> **PB** >>> Project progress/exceptions >>> **CPM**
 
-#### PB Controls ####
-1. Authorizations: e.g. authorize next stage
-2. Progress updates: get regular reports from PM
-3. Exceptions & Changes: receive Exception and Issue Reports 
-
-#### PM Controls ####
-1. Authorizations: authorizes Work packages
-2. Progress updates: receive Checkpoint Reports from TM or team members
-3. Exceptions & Changes: review progress via registers and logs, changes will be handled via Change Control
+So PB gets (regular and Change/Exception) reports and authorizes Stages while PM get Checkpoint reports, reviews Progress and authorizes Work Packages.
 
 #### Management Stages ####
 - chance to check viability, review, authorize
@@ -435,7 +406,7 @@ Delegating authority:
 Relevant documents for PM:
 
 - PM checks progress via Checkpoint Reports (from TM) and Quality Register (maybe also Lessons Log from previous projects)
-- PM keeps track of prograss via Daily Log, Issue Register, Product Status Account, Quality Register and Risk Register
+- PM keeps track of progress via Daily Log, Issue Register, Product Status Account, Quality Register and Risk Register
 
 ## Processes ##
 
@@ -455,16 +426,15 @@ lifecycle for most important themes:
 - Plan: PPD in SU, plan created/baselined in IS, updated in SB, final update in Closing
 
 ### Pre-project ###
-- before the actual project starts
+- before the actual project starts, contains Starting Up and Directing a project
 - first, create a project mandate document (trigger for the project, what is desired)
 - verify that project is worthwhile (prevent poor projects from starting)
 - PB reviews the **Project Brief** and decides to initiate the project 
 
-### IS ###
-- define product quality, project timeline, costs, risk analysis and commitment of resources
-- assemble Project Initiation Documentation
+### Initiaton Stage ###
 - purpose: gives direction and scope of project, forms the "contract" between PB and PM
-- PID contains almost all project information to date (Project Plan, BC, Strategy documents, Risk Register, Team Plan)
+- define product quality, project timeline, costs, risk analysis and commitment of resources
+- assemble PID, PID contains almost all project information to date (Project Plan, BC, Strategy documents, Risk Register, Team Plan)
 - create BC and Benefits Review Plan
 - create project and stage plan
 - project board gets the PID and authorizes the project
@@ -476,7 +446,7 @@ lifecycle for most important themes:
 
 ### The seven processes ###
 
-#### Starting up a project ####
+#### Starting Up a project ####
 - responsibility of PB and Executive, occurs before project starts, should be brief (avg. time could be one week depending on size and complexity)
 - purpose: reasons for project are established, PMT is assigned, authorities exist, Stage Plan for IS is created (do we have a worthwhile and viable product?)
 - objectives: create outline BC, obtain advice from other projects, choose/appoint PMT, create Project Brief (information of scope of the project), create PPD, create Stage Plan (for IS)
