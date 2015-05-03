@@ -45,7 +45,7 @@ framework for good project practice for those involved in a project:
 ### six aspects of PM / variables / tolerances / performance targets / goals ###
 - timescales (the "when")
 - costs (budget)
-- ----------(usable product)
+- quality (usable product)
 - scope (defined scope, stakeholders involved, what is mandatory and what is not)
 - benefits (the "why", ROI, measurable)
 - risk (what risks, how many, how to manage) 
@@ -96,7 +96,8 @@ Three major plans
 - one of the first things of a PM: ask for the BC (although many projects don't have one)
 - continuously maintained throughout the project (because changes in requirements can also lead to changes in the BC, e.g. if additional staff is needed)
 - needs to be verified by PB before project starts
-- Executive is resposible for the BC and for securing funding
+- Executive is responsible for the BC and for securing funding
+- Customer and Supplier will both have a BC (so there are min. 2)
 
 So what do you get?
 
@@ -120,9 +121,10 @@ So what do you get?
 - responsibilities are assigned to roles
 - one person can have multiple roles
 - stakeholders need to be informed, decision makers need to be on the board
+- stakeholders may oppose the project
 
 #### four levels of project organization ####
-1. CPM: Comissioning the project
+1. CPM: Comissioning the project (appoint Executive)
 2. Direction level: PB (make decisions, approve resources, plans, deviations)
 3. Management level: PM (run the project according to the goals)
 4. Delivery level: TM (create products with a certain quality within timescale and costs)
@@ -131,7 +133,7 @@ PMT includes the levels 2-4.
 
 ### Project Management Team ###
 - represents **Executive/Business**, **User** and **Supplier** stakeholders
-- inlcudes CPM, PB, Business/User/Supplier Assurance, PM, TM, Change Authority and Project Support
+- includes CPM, PB, Business/User/Supplier Assurance, PM, TM, Change Authority and Project Support
 - PRINCE2 is based on customer/supplier environment: customer specifies the result and pays, supplier provides resources/skills and delivers the results
 - customer/supplier can be inside the same company
 - usually the executive represents the business role
@@ -146,6 +148,7 @@ PMT includes the levels 2-4.
 - executive owns BC and has the final word on decisions
 - PB need to agree stage tolerances (WP tolerances may be set by TM)
 - PB is accountable for success/failure of the project and provides a unified direction to project and PM
+- responsible for communication with stakeholders
 - business assurance vs. user assurance = value for money vs. product works as expected
 - PB provides resources and funds, supports the PM, ensures effective communication
 - PB may delegate responsibility to a Change Authority (person/group)
@@ -156,6 +159,7 @@ PMT includes the levels 2-4.
 - PM manages on day-to-day-basis and usually comes from the customer (preferred by PRINCE2)
 - needs to be proactive, may take roles Project Support, Team Manager and Change Authority
 - stakeholder management: identify and communicate effectively with people that have interest in project outcome
+- defines roles needed for the project (but doesn't assign people to these roles)
 - TM is optional, may be needed for geographical reasons or when the project is big or complex/highly specialized
 - PM may be supported by PMO/project support (administrative tasks, Configuration Management)
 
@@ -163,6 +167,8 @@ PMT includes the levels 2-4.
 #### Communication Management Strategy ####
 - document describing how communication will be done (what, to whom, how often, internal/external)
 - essentially the **rules of engagement** of communication (flow of information)
+- much of it may come from Corporate guidelines
+- Project Brief, Risk and Issue registers are reviewed and Project Assurance is consulted
 - responsibility of the PM during Initiating a Project
 - contains information on communication methods, tools/techniques, reporting, timing, roles & responsibilities, stakeholders, needed information
 
@@ -179,7 +185,7 @@ PMT includes the levels 2-4.
 - **Quality Planning**
 - **Quality Control**: implement and track quality methods
 - **Quality Assurance**: focus on quality in the **organization**, independent review, complies to company standards, quality processes are in place
-- **Project Assurance**: inside the PMT, duty of the PB (will delegate to make sure project runs smoothly regarding performance in user, supplier and business areas), useful to double-check the affirmations of PM and may act as an "eye" of the PB
+- **Project Assurance**: inside the PMT, duty of the PB (will delegate to make sure project runs smoothly regarding performance in user, supplier and business areas), useful to double-check the affirmations of PM and may act as an "eye" of the PB, confirms Stage and Project progress against tolerances
 
 #### Quality planning #####
 - identifying the products to control
@@ -203,28 +209,31 @@ PMT includes the levels 2-4.
 - defines how quality standards are applied ("how quality will be done")
 - typical topics: what system/standard, tools and techniques, who is responsible for documenting and approving/confirming, timing of activities
 
-##### Project Product descriptions #####
+##### Product descriptions #####
 - created for all products as part of the planning activities (before PP is completed)
 - needs to contain quality criteria, acceptance methods and acceptance responsibilities
+- Stage Plan contains the concrete (and final) product descriptions
 - typical content: identifier, title (of the product), purpose, composition (parts), quality criteria, quality tolerance, quality method, quality skills (e.g. knowledge for testing), quality responsibilities
 - **PPD** (one document) is the description of the main product and more like an overview and is created in the SU phase
-- what does the product need to deliver to get accepted (acceptance criteria)
+- what does the product need to deliver to get accepted (defines acceptance criteria)
 - identify roles and sources of information for project/product
 - usually 2-4 pages with a lot of quality-related information
 
 ##### Quality register #####
 - diary of quality events during the project
+- usually maintained by Project Support (just like other administrative tasks)
 - may be a spreadsheet with these columns: product id, name, producer, reviewer, approver, target/actual review date, target/actual approve date, result
 
 #### Quality review (meeting)####
 - four roles: chair (host), presenter (represents product producers), reviewer (reviews, asks, confirms), administrator (admin support for chair) or **CRAP**
 - objectives: assess products against criteria, involve stakeholders, provide confirmation, sign off the product (create baseline, no more changes)
 - output: decision to quality-approve products or not (complete, conditionally complete or incomplete)
+- presenter requests approval for the product
 - Quality Register gets updated with a summary and date of a follow-up meeting
 
 ### Plans ###
 - purpose: facilitate communication and control by defining the means of delivering the products (Why, What, Who, When and How much)
-- plan always needs to show that targets are achievable
+- plan always needs to show that targets are achievable, includes dependencies, budget and schedule but no named resources
 - plan theme provides a framework to design, develop and maintain project plans
 - failing to plan is planning to fail
 
@@ -232,7 +241,7 @@ PMT includes the levels 2-4.
 - three levels of planning to reflect different management level needs:
 - **PP**: direction level (high-level), used by Project Board, shows major products, resources, activities, their cost and when they will be delivered, approved by executive
 - will be baselined for later reference
-- **Stage Plan**: management level, created for each stage with more detail, used by PM day-to-day
+- **Stage Plan**: management level, created for each stage with more detail (near the end of previous stage), used by PM day-to-day
 - **Team Plans**: delivery level (team manager), plan the work in WPs
 - there may be **Exception Plans** (when out of tolerances, get project back on track, replaces project/stage plan, PM must inform PB) 
 - there will be a **Benefits Review Plan** (part of BC)
@@ -276,7 +285,7 @@ A product checklist lists all major products and delivery dates.
 #### Risk Management Strategy ####
 - document that defines project procedures for Risk Management
 - how risks will be identified, assessed, controlled and communicated (techniques and standards to be applied)
-- template may already exist in the company/programme
+- template may already exist in the company/programme, other sources are BC and Project Brief
 
 #### Risk Register ####
 - captures and maintains information on all risks (threats/opportunities)
@@ -323,7 +332,7 @@ or **I** **A**te **P**eaches **I**n **C**hina.
 #### Management products ####
 1. **Configuration Management Strategy**: document describing how issues and changes will be handled (e.g. identify/control products, tools, data to keep, responsibilities, scale for priorization/severity),impact assessments
 2. **Configuration Items Records**: provide a set of records for each product (metadata, list of attributes like owner, item type, stage, users, source, version), identify user access, relationships and status
-2. **Product Status Account**: report on state of products (e.g. on stage level), checks the current version, picture of progress made against the baselined products (usually from Project Support)
+2. **Product Status Account**: report on state of products (e.g. on stage level), checks the current version, picture of progress made against the baselined products (usually produced by Project Support)
 3. **Daily Log**: diary/notes for all informal information, useful to prepare Risk / Configuration Management Strategy
 4. **Issue Register**: document to capture and maintain issues (formal), contains reporter, raised (date), prio, severity
 5. **Issue Reports**: describes issue(s) in detail, lists related issues, recommendation, issue type, raised by, impact assessment, decision
@@ -469,7 +478,7 @@ lifecycle for most important themes:
 - PB needs to "allow" the project to continue via signing off the PID
 
 #### Controlling a stage ####
-- purpose: assign and monitor work, deal with issues, take corrective action, report progress to PB/stakeholders (communication)
+- purpose: assign and monitor work (review WP status), deal with issues, take corrective action, report progress to PB/stakeholders (communication)
 - objectives: focus on delivery, control risks and issues, keep BC under review, deliver products to agreed quality within cost and time and achieve benefits
 - main input documents are Stage Plan and PID
 - monitoring via Checkpoint Reports and Quality Register (and other registers)
@@ -480,6 +489,7 @@ lifecycle for most important themes:
 - purpose: manage and control work between PM and TM by placing formal requirements on accepting/executing/delivery of products
 - objectives: products are authorized and agreed, team is aware and understands expected effort, time and cost, deliverables are within tolerances, TM provides progress information
 - TM needs to demonstrate that products meet their quality criteria (e.g. via Quality Review Meeting) and work gets done
+- Team Plan is updated once WP is returned
 - also covers acceptance and execution of project work by external suppliers
 - WPs have three activities: accept, do and deliver (update Quality Register)
 
@@ -496,8 +506,8 @@ lifecycle for most important themes:
 - objectives: verify user acceptance, ensure products are supported after the project, review performance, assess benefits (now and future), address open issues and risks with follow-up action recommendations
 - ownership of the project gets transferred to the customer (handover)
 - update Lessons Log, Configuration Items Records, Benefits Review Plan (evaluate the project)
+- to enable audits, all project information is secured and archived
 - prepare project for closure by creating End Project Report, Lessons Learned Report and Acceptance Record
-
 
 
 Sources: 
@@ -505,6 +515,106 @@ Sources:
 - [PRINCE2 foundation training manual by Management Plaza](http://www.mgmtplaza.com/elearn/dirBooks/P2FPM42.pdf)
 - [Flashcards](http://quizlet.com/9018193/prince2-foundation-flash-cards/)
 - http://www.prince2primer.com/key-prince2-foundation-and-practitioner-exam-learning-points
+
+## Addendum ##
+
+As a minor update I want to add some best practices that are not related to PRINCE2 at all and just summarized for later reference. They may make it into a further (independent) guide.
+
+### Goals ###
+Goals are often unclear - if you don't ask, everybody will asume that things are clear. So better ask for details right away. If you don't get them, ask for somebody who might know.
+
+Relations matter - if people estimate too defensively it might make sense to get other opinions or bypass them.
+
+To find out whether a goal is realistic, tests can help. They can also build a certain acceptance (e.g. for new software tool). These tests can (and sometimes need to) be a central part of the project.
+
+Often different business units have completely opposing goals. Negotiating is always hard, but it's impossible once there is nothing to negotiate. So try to find a compromise by setting a target corrider (e.g. 30-50% increase in production).
+
+### Time ###
+Nobody wants to hear "that is completely unrealistic". If you think so, summarize the (approx.) efforts for all participating business units - once that is done people will be aware of the consequences and get rid of (typical but unfounded) optimism.
+
+Prepare and discuss options like
+
+- more people
+- less features (80/20)
+- outsourcing (people or 3rd party products)
+- postponed deadline
+
+### Budget ###
+Typical dialogue representing optimisim 
+
+CXO
+> We need a new software tool for purpose X
+
+Internal business unit: 
+> Three years, nothing less!
+
+CXO: 
+> We'll need it in one!
+
+External supplier:
+> No problem!
+
+Now for time & material projects, external supplier won't make it in a year but has the job and gets the money since the tool is needed. For fixed-price, he won't get more money in this case, but will argue on every tiny feature that is not precisely described since he doesn't want to work for free.
+
+Workaround: Document possible requirement changes for the external supplier that are part of the contract. This may lead to more realistic estimations.
+ 
+
+### Organisation ###
+Projects > 2 years are problematic, 18 months should be reasonable for anything.
+
+Track progress by methods you've agreed on during kick-off (status reports, meetings).
+
+Rule of thumb: as soon as 7 people are working on a project full-time than PM is also a full-time job.
+
+A matrix-based project plan is like a team-based Gantt chart. It's easier to read for most people. See this example:
+
+![](http://www.synapse-web.com/WebRoot/Store12/Shops/63374192/4F41/2481/B245/D813/0B8B/C0A8/29BA/E0D2/Matrixprojektplan.jpg)
+
+If you need to classify/weighten different projects, consider
+
+- strategic purposes (market, focus)
+- time (long/short)
+- effort (money, people)
+- benefits (realistic/optimistic)
+
+Those aspects should be ordered so they sum up to 100%.
+
+### During the project ###
+Practice "walking around". Be with the teams when they start their part of the project and at least once/week. Ask if they need support.
+
+Don't try to solve the teams' problems even if you could (roles need to be clear - don't play the guru). You might know better about some aspects, but the team members are the experts in their matter. Use that competence. Always ask critical questions though. 
+
+If team members aren't up to the tasks you'll unlikely get more senior ones - so document the effects and communicate to the stakeholders.
+
+If requirements are added now (customer/executive) be positive about it but document and communicate consequences regarding deadlines, costs and staff. Demand a decision. Do the same once team members are pulled out - escalate quickly.
+
+PMs have the burden to raise problems to the board early. So if events have an effect on
+
+- goals
+- time
+- costs
+- staff
+
+raise them quickly. If you don't it'll only get worse. Even if you know you won't reach the goals don't do any fingerpointing. Stick to the facs and find solutions (see [Time](#time)).
+
+Sometimes you need a decision but don't get it. Before escalating, document the effect of this. Prepare different options in advance. Also make sure you know absences of executives. If you don't get a meeting with all executives, approach them one-by-one.
+
+"Emigrated" colleagues should be able to give feedback in 1-on-1s. Aks them (as any other colleague) for aspects where they see room  for improvement. Don't disagree with them directly (even if you do), instead try to discuss concrete examples to find out where their attitude comes from. Demonstrate that they have a (positive) impact to the project ad their work matters.
+
+### Meetings ###
+
+Meetings should follow a given structure and should be time-based if possible. Good example for a topic:
+
+- 15 minute presentation
+- 10 minute discussion
+- 5 minutes to summarize and agree on required actions
+
+Agenda and protocol is mandatory and needs to be reviewed. Give hints/links for preparation, otherwise no one will do. Try not to be the hosts since you'll have a preference/opinion on topics as well.
+
+Never invite more people than necessary. If discussions become endless, a host should interrupt and ask people to note their opinion on a card so that the topic can be structured and the discussion becomes fruitful again.
+
+### Finish ###
+Always do some closing event (Microsoft ship-It award) to get valuable feedback (documentation mandatory) and avoid your project to become a "submarine".
 
 
 
