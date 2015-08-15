@@ -516,12 +516,12 @@ Sources:
 - [Flashcards](http://quizlet.com/9018193/prince2-foundation-flash-cards/)
 - http://www.prince2primer.com/key-prince2-foundation-and-practitioner-exam-learning-points
 
-## Addendum ##
+## Addendum 1 - best practices ##
 
 As a minor update I want to add some best practices that are not related to PRINCE2 at all and just summarized for later reference. They may make it into a further (independent) guide.
 
 ### Goals ###
-Goals are often unclear - if you don't ask, everybody will asume that things are clear. So better ask for details right away. If you don't get them, ask for somebody who might know.
+Goals are often unclear - if you don't ask, executives/board will assume that things are fine. So better ask for details right away. If you don't get them, ask for someone who might know.
 
 Relations matter - if people estimate too defensively it might make sense to get other opinions or bypass them.
 
@@ -554,10 +554,9 @@ CXO:
 External supplier:
 > No problem!
 
-Now for time & material projects, external supplier won't make it in a year but has the job and gets the money since the tool is needed. For fixed-price, he won't get more money in this case, but will argue on every tiny feature that is not precisely described since he doesn't want to work for free.
+Now for time & material projects, external supplier won't make it in a year but has the job and gets the money since the tool is needed. For fixed-price, he won't get more money in this case, but will argue on every tiny feature that is not precisely described since he also won't work for free.
 
 Workaround: Document possible requirement changes for the external supplier that are part of the contract. This may lead to more realistic estimations.
- 
 
 ### Organisation ###
 Projects > 2 years are problematic, 18 months should be reasonable for anything.
@@ -614,7 +613,98 @@ Agenda and protocol is mandatory and needs to be reviewed. Give hints/links for 
 Never invite more people than necessary. If discussions become endless, a host should interrupt and ask people to note their opinion on a card so that the topic can be structured and the discussion becomes fruitful again.
 
 ### Finish ###
-Always do some closing event (Microsoft ship-It award) to get valuable feedback (documentation mandatory) and avoid your project to become a "submarine".
+Always do some closing event (Microsoft ship-It award) to get valuable feedback (documentation mandatory) to avoid that your project becomes a "submarine".
 
+## Addendum 2 - Scrum ##
 
+Scrum became the most relevant software development method. In this addendum some best practices are briefly aggregated.
+
+### Team ###
+- best team size is 7+/-2 developers (+ PO and Scrum Master), more than 9 members increase coordination effort
+- aim for as less turnover as possible
+- new colleagues shouldn't be added to a team for short time, instead better do QA or handling of incidents
+
+### Preparation, Organisation and Meetings ###
+- accept three conditions:
+	1. you'll never have all requirements at the beginning of a project
+	2. all requirements will change
+	3. time & money will never suffice - there'll always be more to do
+- during a kick-off (with team AND stakeholders):
+	- explain all relevant aspects of a project
+	- note open questions
+	- give outlook on next steps
+	- clarify/define collaboration in the team, meetings, reporting intervals
+	- define DoR/DoD
+- establish a (public) impediment backlog
+- also helpful: things-that-matter matrix for the big picture across all backlog items
+
+![](http://agiletransparency.com/wp-content/uploads/2012/07/TTM-empty.jpg)
+
+- backlog grooming shouldn't be forgotten so everyone is aware of future storis, shortens planning, disadvantage: during planning usually devs will have forgotten about the items already (time gap)
+- never add unfinished items to a review (before QA verified functionality), be cautious about comments like "99% done", "works for me" etc.
+- retrospectives are the most important meeting since they help us to improve the way we work
+- always check for the previous retrospective (what has been accomplished, where are we stuck)
+- consider adding a release sprint for major versions, following tasks may be part of it:
+	- provide final code for production
+	- final testing in production (blue/green)
+	- migrate data
+	- setup administration/monitoring systems
+	- prepare release organisationally (inform), trigger marketing
+	- update system documentation
+	- hand over the product to ops/customer
+	- schedule training
+- projects should have a general retrospective meeting as well regarding team, processes and the way the project went
+- following information should be prepared:
+	- general information: vision, milestones and events, members, roles, relationships, duration, costs, quality aspects
+	- general successes accomplished and mistakes made
+	- organisational impediments and their impact
+	- KPIs: which targets were met and not, what has been modified
+	- which problems were solved during the project
+	- technical excellence: which progress was made, what became daily routine, which errors happened and how were they solved, test coverage
+	- team charts: release, velocity, DoD, DoR
+	- figures: how many users, customer feedback, sales
+- result should be processed into "lessons learned"
+
+### Core definitions ###
+- Definition of Done (DoD): clarify the completion of a ticket/story
+- example criteria: at least two devs worked on the story (if possible), existing code was refactored, automated tests have been added and run, documentation was updated (also inline), all tests green, PO and/or QA verified the story
+- Definition of Ready (DoR): summarize requirements on a backlog item
+- example criteria: business value is clear, requirement is defined, research effort is limited (fits into sprint) so estimation can be done, external dependencies are outlined, acceptance criteria exist so test cases can be extracted, visual designs are complete, text and translations are present, risks (and consequent actions) are clear
+
+### User stories ###
+- story map: divide epics into user stories, prioritize them (MuSCoW)
+- walking skeleton: minimal system, tiny implementation of a end-to-end functionality (highlighted in grey)
+
+![](http://scrum-in-der-praxis.de/wp-content/uploads/2012/08/4-10-Story-Map-Walking-Skeleton-1024x814.jpg)
+
+- stories need to be split up so they can be estimated (fibonacci 1-13 story points), multiple ways to do so:
+	- vertical: split by business aspects (affects all architectural layers)
+	- workflow: split user story by the steps of a workflow (e.g. 3-step wizard)
+	- business rule: each (complex) rule gets an own story, e.g. "for leap years, my calendar shall display a special notification"
+	- complexity: keep user story in simplest form and add new stories for edge cases (e.g. validation)
+	- data type: e.g. if different media types can be attached and different actions may follow it is best to define one story per type (summarize in epic)
+	- input: one functionality can be used in various ways (mouse/keyboard/touch) so start with the easiest and make new stories for each additional way
+	- effort: if choices can be made for an action (e.g. choose credit card) you may create stories for each card type, however complexity will be big for the first and little for all others. Therefore it may be better to create one story for the default choice and a second one for ALL alternatives.
+	- comfort: put multiple levels of comfort into different stories (e.g. creating appointment in calendar - API call/web interface/Outlook import)
+	- role: different UI feedbacks for different user roles can be put in different stories
+	- performance: simple first implementation that ignores all performance aspects, follow-up story improves the experience
+	- research: for big uncertainty, create one story that answers open questions and another one for the implementation
+- splitting is good if parts of the stories can be ommitted (80/20) and/or if user stories have a similar size
+
+### Estimation ###
+
+- estimation is usually done based on time (X hours) or story points (SP) - SP are more "abstract" but people generally estimate better relatively than absolute - for the velocity of a team the estimation unit usually doesn't matter
+- estimation is usually done via planning poker (with ALL team members)
+- estimating subtasks of a story is generally old-fashioned, simple rule: each subtask shouldn't take longer than a day, story matters anyway (finishing subtasks has no business value)
+- code reviews are usually "forgotten" during estimation, consider adding a subtask for them
+- alternative is a "team estimation game" (generally faster): 
+	- each backlog item gets a card
+	- one dev picks a (random) card, reads it out loud and puts it on the wall
+	- second dev reads next card and puts it before (simpler) / under (same) / after (more complex) on the wall 
+	- third dev may decide to read the next card OR change complexity of one of the existing cards (including an explanation)
+	- once all cards are read team discusses all items on the wall and may change complexity
+- another method is the "magic estimation":
+	- each dev gets a random card and assigns it to a T-shirt-size (XS,S,M,L,XL,XXL) individually, may ask PO questions, but no disucssion in the team
+	- now everyone looks at the card and may decide to move one (explain)
+	- estimation is finished once no one wants to move a card anymore
 
